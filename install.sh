@@ -24,7 +24,7 @@ CONFIG_ITEMS=(
 
 for item in "${CONFIG_ITEMS[@]}"; do
     # dotfilesディレクトリ内にその名前のフォルダやファイルがあるか確認
-    if [ -e "$DOTFILES_DIR/$item" ]; then
+    if [ -e "$DOTFILES_DIR/.config/$item" ]; then
         ln -snf "$DOTFILES_DIR/$item" "$CONFIG_DIR/$item"
         echo "シンボリックリンクを作成しました: $CONFIG_DIR/$item -> $DOTFILES_DIR/$item"
     else
