@@ -19,9 +19,7 @@ fi
 # 管理したい .config 配下のディレクトリ/ファイル名をここにリストアップします
 CONFIG_ITEMS=(
     "nvim"
-    # "alacritty"
-    # "starship.toml"
-    # 今後増えたら、ここに追記していくだけでOKです
+    "raycast"
 )
 
 for item in "${CONFIG_ITEMS[@]}"; do
